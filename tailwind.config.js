@@ -24,7 +24,7 @@ module.exports = {
     // },
     extend: {
       fontFamily: {
-        "firago": ["FiraGO", ...defaultTheme.fontFamily.sans],
+        "raleway": ["Raleway", ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         sm2: "0.9375rem", // 15px label
