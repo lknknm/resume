@@ -12,6 +12,9 @@ module.exports = {
       lg: "1079.5px",
       xl: "1280px",
     },
+    plugins: [
+      require('tailwindcss-animated')
+    ],    
     /* For A4 size */
     // screens: {
     //   screen: {"raw": "screen"},
