@@ -1,18 +1,13 @@
-Universal Résumé Template
----------
+# Résumé
 
-Minimal and formal résumé (CV) website template for print, mobile, and desktop. The proportions are the same on the screen and paper. Built with amazing [Tailwind CSS](https://tailwindcss.com/).
+Hello! My name is Lucas and this is my resumé repository. 
 
-[Letter Size Demo](https://universal-resume.netlify.app/) | [Multiple Pages Demo](https://universal-resume-pages.netlify.app/) | [A4 Size Demo](https://universal-resume-a4.netlify.app/) | [Mobile Demo](http://www.responsinator.com/?url=https%3A%2F%2Funiversal-resume-pages.netlify.app%2F)
+This resume was built upon the [Universal Resumé Template](https://github.com/WebPraktikos/universal-resume
+), although it was modified to a different styling using TailwindCSS.
+You can also fork/import this project and use it with your own information to build your own Resumé (:
 
-**How to print or save as PDF?**  
-In Chrome, Right-click → Print. In Firefox, File → Print. More info [here](#printing).
-
-**Does it support A4 and Letter paper sizes?**  
-Yes. Replace every `-letter` with `-a4`, and uncomment specified code blocks. More info [here](#a4-size-variant).
-
-**Why it’s made?**  
-I couldn’t find any formal or professional résumé (CV) website with good typography that is optimized for the Web, print, PDF, and mobile. Also, researching what recruiters want, my priorities were fast scanning time and all content to fit on one page.
+I'm going to leave bellow the original instructions to import and run the project if you want to make your own version of it. 
+Keep in mind, thought, that I do not authorize you to reuse any of my information on your resume if you choose to fork this repository (:
 
 How to run it
 ---------
@@ -123,14 +118,6 @@ If you want to significantly speed up font loading time, find out what fonts you
 ```html
 <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous">
 ```
-
-Contact Me / Hire Me
----------
-
-If you have any question, comment, or issue, please let me know via:
-- hi@webpraktikos.com
-- https://twitter.com/webpraktikos
-- or open an issue on GitHub (Issues → New issue)
 
 License
 ---------

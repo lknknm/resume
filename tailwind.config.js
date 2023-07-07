@@ -24,6 +24,7 @@ module.exports = {
     // },
     extend: {
       fontFamily: {
+        "LibreBaskerville": ["LibreBaskerville", ...defaultTheme.fontFamily.serif],
         "raleway": ["Raleway", ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
@@ -66,6 +67,13 @@ module.exports = {
           "650": "hsl(216, 15%, 48%)",
           "750": "hsl(214, 17%, 32%)",
           ...defaultTheme.colors.gray
+        },
+        orange: {
+          "500": "#f75c3e",
+        },
+        offwhite: {
+          "100": "#efebe8",
+          "200": "#dedad7"
         },
         link: "#fbf3f3"
       },
