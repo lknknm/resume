@@ -4,3 +4,5 @@
 package-lock.json
 /docs/build.css
 /tmp/
+public/
+.DS_Store
