@@ -17,15 +17,10 @@
     <main class="font-raleway hyphens-manual bg-gray-200">
       <!-- Page -->
       <div
-        class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-gray-200"
+        class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-a4 xsm:p-8 sm:p-9 md:p-16 bg-gray-200"
       >
         <!-- Name -->
         <header class="flex items-center mb-8 md:mb-11">
-          <img
-            src="./assets/profile.jpg"
-            alt="Profile picture"
-            class="w-64 mr-8"
-          />
           <div>
             <h1 class="text-4xl font-semibold text-gray-800 pb-px">
               Lucas Mellone
@@ -39,7 +34,7 @@
             </p>
             <br />
 
-            <section class="mb-4 break-inside-avoid">
+            <section class="mb-1 break-inside-avoid">
               <ul class="list-inside pr-7">
                 <li class="mt-1 leading-normal text-gray-700 text-sm">
                   <a
@@ -74,7 +69,7 @@
 
         <!-- Column -->
         <div
-          class="md:col-count-2 print:col-count-2 col-gap-md md:h-a4-col-full print:h-a4-col-full col-fill-auto"
+          class="md:col-count-1 print:col-count-1 col-gap-md md:h-a4-col-full print:h-a4-col-full col-fill-auto"
         >
           <section class="mt-8 first:mt-0">
             <!-- To keep in the same column -->
@@ -91,17 +86,13 @@
                   C++ software engineer with deep focus on performance and
                   standards-compliant generic programming.
                   <br />
+                  Actively engaged with modern C++ standards evolution and
+                  language design principles.
                   2 years production C++ experience in systems-level software
                   (BIM engines, graphics pipelines).
-                  <br />
-                  Specialised in C++20 features, memory optimization,
-                  and open source contribution.
-                  <br />
                   Architecture background bringing systems-thinking to software
                   design.
                   <br />
-                  Actively engaged with modern C++ standards evolution and
-                  language design principles.
                 </p>
               </section>
             </div>
@@ -136,51 +127,42 @@
                         class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                         >›</span
                       >
-                      C++ Software Engineer for Zuru Tech Dreamcatcher — first
-                      BIM Software connected to final production manufacturing,
-                      built on Unreal Engine.
+                    Profiled a per-entity export phase in a C++/Unreal Engine BIM application. Identified a 50% lookup miss rate (≈78% worst case and redundant serialisation per update cycle, then built a reusable benchmark suite to track phase cost.
                     </li>
                     <li class="mt-2 text-sm text-gray-700 leading-normal">
                       <span
                         class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                         >›</span
                       >
-                      Member of the team responsible for openings operations
-                      programming — windows, doors, holes, etc — and UI
-                      components programming for such entities.
+                    Authored internal C++ white papers on Templated Metaprogramming and zero-overhead composable graph ranges (C++20 ranges and concepts), verifying assembly parity with hand-written loops.
                     </li>
                     <li class="mt-2 text-sm text-gray-700 leading-normal">
                       <span
                         class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                         >›</span
                       >
-                      Collaborating in features along other team members,
-                      project owners and product design team to ensure the
-                      software matches the technical manufacturing requirements
-                      from the factory.
+                    Raised code-quality standards through code review: established allocation-free getter conventions adopted into team documentation, removed redundant hash lookups in hot paths, and resolved static-analysis findings (33 null-dereference warnings in a single change).
                     </li>
-                  </ul>
-                </section>
-
-                <section class="mb-4 break-inside-avoid">
-                  <header>
-                    <h3
-                      class="text-lg font-semibold text-gray-700 leading-snugish"
-                    >
-                      Career Break
-                    </h3>
-                    <p class="leading-normal text-md text-gray-650">
-                      Oct 2022 - Jan 2025
-                    </p>
-                  </header>
-                  <ul class="">
                     <li class="mt-2 text-sm text-gray-700 leading-normal">
                       <span
                         class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                         >›</span
                       >
-                      Career transition between Architecture and Urban Studies
-                      to Software Engineering.
+                    Reduced regressions in the openings domain by fixing 27 defects (14 regressions, including major and very-high priority issues) and introducing integration test suites that lock in opening states.
+                    </li>
+                    <li class="mt-2 text-sm text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                    Detected an 80% dimensional error in steel window frame geometry (4.5 cm against a 2.5 cm spec) that propagated into factory export data, and aligned configuration with product-design specifications.
+                    </li>
+                    <li class="mt-2 text-sm text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                    Led the architecture decision for parametric window geometry in a C++/Unreal Engine BIM application, comparing mesh-slicing against profile extrusion across 13 criteria (performance, memory, coupling, asset workflow, CAD alignment), and prototyped both approaches to guide the team's implementation direction.
                     </li>
                   </ul>
                 </section>
@@ -199,103 +181,13 @@
                       </a>
                     </h3>
                     <p class="leading-normal text-md text-gray-650">
-                      Oct 2020 – Oct 2022 | Architect and Urban Planner
+                      2020 – 2022 | Architect and Urban Planner
                     </p>
                   </header>
-                  <ul class="">
-                    <li class="mt-2 text-sm text-gray-700 leading-normal">
-                      <span
-                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                        >›</span
-                      >
-                      Designing and planning high standard houses, apartments
-                      and buildings with high architectural value.
-                    </li>
-                    <li class="mt-2 text-sm text-gray-700 leading-normal">
-                      <span
-                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                        >›</span
-                      >
-                      Successfully delivering high quality concept presentations
-                      directly to clients and shareholders.
-                    </li>
-                    <li class="mt-2 text-sm text-gray-700 leading-normal">
-                      <span
-                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                        >›</span
-                      >
-                      Modelling and documenting high quality BIM models and
-                      families using Autodesk Revit.
-                    </li>
-                  </ul>
                 </section>
               </div>
             </section>
           </section>
-
-  <section class="mt-8 first:mt-0">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-razzmatazz-600 print:font-normal"
-              >
-                SKILLS
-              </h2>
-
-              <section class="mb-4 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                      C++
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    C++ 20 → C++26
-                  </p>
-                </header>
-                <ul class="">
-                  <li class="mt-1 text-sm text-gray-700 leading-normal">
-                    <span
-                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                      >›</span
-                    >
-                    Generic Programming: Concepts, Ranges, Templates, SFINAE
-                  </li>
-                  <li class="mt-1 text-sm text-gray-700 leading-normal">
-                    <span
-                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                      >›</span
-                    >
-                    Customization Point Objects and Type Traits
-                  </li>
-                  <li class="mt-1 text-sm text-gray-700 leading-normal">
-                    <span
-                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                      >›</span
-                    >
-                    Performance: Memory layouts, cache optimization, custom
-                    allocators
-                  </li>
-                  <li class="mt-1 text-sm text-gray-700 leading-normal">
-                    <span
-                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                      >›</span
-                    >
-                    Zero-copy abstractions and move semantics
-                  </li>
-                  <li class="mt-1 text-sm text-gray-700 leading-normal">
-                    <span
-                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                      >›</span
-                    >
-                    Systems Programming: Graphics APIs (Vulkan), low-level
-                    optimization
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </section>
-
 
           <section class="mt-1 first:mt-0">
             <!-- To keep in the same column -->
@@ -473,9 +365,77 @@
                   </ul>
                 </div>
               </section>
+          <section class="mt-8 first:mt-0">
+            <!-- To keep in the same column -->
+            <div class="break-inside-avoid">
+              <h2
+                class="mb-4 font-bold tracking-widest text-sm2 text-razzmatazz-600 print:font-normal"
+              >
+                SKILLS
+              </h2>
+
+              <section class="mb-4 break-inside-avoid">
+                <header>
+                  <h3
+                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                  >
+                      C++
+                  </h3>
+                  <p class="leading-normal text-md text-gray-650">
+                    C++ 20 → C++26
+                  </p>
+                </header>
+                <ul class="">
+                  <li class="mt-1 text-sm text-gray-700 leading-normal">
+                    <span
+                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                      >›</span
+                    >
+                    Generic Programming: Concepts, Ranges, Templates, SFINAE
+                  </li>
+                  <li class="mt-1 text-sm text-gray-700 leading-normal">
+                    <span
+                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                      >›</span
+                    >
+                    Customization Point Objects and Type Traits
+                  </li>
+                  <li class="mt-1 text-sm text-gray-700 leading-normal">
+                    <span
+                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                      >›</span
+                    >
+                    Performance: Memory layouts, cache optimization, custom
+                    allocators
+                  </li>
+                  <li class="mt-1 text-sm text-gray-700 leading-normal">
+                    <span
+                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                      >›</span
+                    >
+                    Zero-copy abstractions and move semantics
+                  </li>
+                  <li class="mt-1 text-sm text-gray-700 leading-normal">
+                    <span
+                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                      >›</span
+                    >
+                    Systems Programming: Graphics APIs (Vulkan), low-level
+                    optimization
+                  </li>
+                </ul>
+              </section>
             </div>
           </section>
 
+            </div>
+          </section>
+
+      </div>
+       <!-- Page -->
+      <div
+        class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-a4 xsm:p-8 sm:p-9 md:p-16 bg-gray-200"
+      > 
           <section class="mt-8 first:mt-0">
             <!-- To keep in the same column -->
             <div class="break-inside-avoid">
@@ -681,7 +641,6 @@
             </div>
           </section>
 
-                </div>
         <!-- end Column -->
       </div>
       <!-- end Page -->
