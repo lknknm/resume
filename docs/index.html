@@ -8,13 +8,65 @@
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous"> -->
-    <link href="./styles.css" rel="stylesheet" />
+    <title>Lucas Mellone — Resume</title>
+
+    <!-- Preview only: stands in for ./styles.css so the page renders on its own.
+         In your project, keep <link href="./styles.css"> and put the colours below in tailwind.config.js. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: { xsm: "460px" },
+            fontFamily: {
+              raleway: ["Raleway", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
+            },
+            fontSize: {
+              md: ["0.9375rem", "1.5rem"],
+              sm2: ["0.8125rem", "1.25rem"],
+            },
+            lineHeight: { snugish: "1.3" },
+            spacing: {
+              1.6: "0.4rem",
+              2.1: "0.525rem",
+              3.2: "0.8rem",
+              128: "32rem",
+            },
+            maxWidth: { a4: "210mm" },
+            height: { a4: "297mm" },
+            colors: {
+              /* Slate & Amber */
+              razzmatazz: { 600: "#B45309" }, // section headings (amber)
+              gray: {
+                100: "#F8FAFC", // chip text
+                200: "#F8FAFC", // page background
+                550: "#94A3B8", // ↗ arrows
+                650: "#64748B", // dates, subtitles
+                700: "#334155", // body text, chip background
+                750: "#273449", // secondary titles
+                800: "#1E293B", // name
+              },
+            },
+          },
+        },
+      };
+    </script>
     <style>
-      /* One-page A4 print: slightly smaller type, less vertical padding, full-sheet background */
+      /* One-page A4 print: slightly smaller type, less vertical padding, white sheet */
       @media print {
         html {
           font-size: 11.5px !important;
+        }
+        body,
+        main,
+        .page {
+          background: #ffffff !important;
         }
         .page {
           height: 297mm !important;
@@ -22,18 +74,21 @@
           padding-bottom: 2.5rem !important;
         }
       }
+      a:focus-visible {
+        outline: 2px solid #b45309;
+        outline-offset: 2px;
+      }
     </style>
-    <title>Lucas Mellone — Resume</title>
   </head>
 
   <body class="bg-gray-200">
     <main class="font-raleway hyphens-manual bg-gray-200">
       <!-- Page -->
       <div
-        class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-a4 print:h-a4 xsm:p-8 sm:p-9 md:p-16 bg-gray-200"
+        class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-a4 print:h-a4 xsm:p-8 sm:p-9 md:p-16 md:pt-10 bg-gray-200"
       >
         <!-- Name -->
-        <header class="flex items-center mb-2 md:mb-11">
+        <header class="flex items-center mb-4">
           <div>
             <h1 class="text-4xl font-semibold text-gray-800 pb-px">
               Lucas Mellone
@@ -81,19 +136,17 @@
         <!-- Column -->
         <div class="">
           <section class="mt-4 first:mt-0">
-            <!-- To keep in the same column -->
             <section class="mt-1 first:mt-0">
-              <!-- To keep in the same column -->
               <div class="break-inside-avoid">
                 <h2
-                  class="mb-2 font-bold tracking-widest text-sm2 text-razzmatazz-600 print:font-normal"
+                  class="mb-2 font-bold tracking-widest text-md text-razzmatazz-600 print:font-normal"
                 >
                   EXPERIENCE
                 </h2>
                 <section class="mb-2 break-inside-avoid">
                   <header>
                     <h3
-                      class="text-lg font-semibold text-gray-700 leading-snugish"
+                      class="text-base font-semibold text-gray-700 leading-snugish"
                     >
                       <a href="https://www.zuru.tech/" class="group">
                         ZURU Tech Italy
@@ -178,7 +231,7 @@
                 <section class="mb-2 break-inside-avoid">
                   <header>
                     <h3
-                      class="text-lg font-semibold text-gray-700 leading-snugish"
+                      class="text-base font-semibold text-gray-700 leading-snugish"
                     >
                       <a href="https://www.davidito.com.br/" class="group">
                         David Ito Architecture
@@ -197,11 +250,10 @@
             </section>
           </section>
 
-          <section class="mt-1 first:mt-0">
-            <!-- To keep in the same column -->
+          <section class="mt-4 first:mt-0">
             <div class="break-inside-avoid">
               <h2
-                class="mb-2 font-bold font-raleway tracking-widest text-sm2 text-razzmatazz-600 print:font-normal"
+                class="mb-2 font-bold font-raleway tracking-widest text-md text-razzmatazz-600 print:font-normal"
               >
                 OPEN SOURCE SOFTWARE CONTRIBUTIONS
               </h2>
@@ -209,7 +261,7 @@
               <section class="mb-2 break-inside-avoid">
                 <header>
                   <h3
-                    class="text-lg font-semibold text-gray-750 leading-snugish"
+                    class="text-base font-semibold text-gray-750 leading-snugish"
                   >
                     <a
                       href="https://github.com/llvm/llvm-project"
@@ -261,9 +313,9 @@
                       target="_blank"
                     >
                       Implemented C++23 constexpr &lt;cmath&gt; support
-                      (P0533R9), including comparison functions and fpclassify,
-                      and extended constant evaluation to Clang builtins (fmax,
-                      fmin, copysign; in review).
+                      (P0533R9), including comparison functions and
+                      fpclassify, and extended constant evaluation to Clang
+                      builtins (fmax, fmin, copysign; in review).
                       <span
                         class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
                         >↗</span
@@ -281,9 +333,9 @@
                       target="_blank"
                     >
                       Applied [[nodiscard]] across 6 range adaptors (transform,
-                      adjacent, adjacent_transform, elements, join, lazy_split),
-                      enabling discarded-value diagnostics for misused views
-                      with full test coverage.
+                      adjacent, adjacent_transform, elements, join,
+                      lazy_split), enabling discarded-value diagnostics for
+                      misused views with full test coverage.
                       <span
                         class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
                         >↗</span
@@ -322,7 +374,7 @@
               <section class="mb-2 break-inside-avoid">
                 <header>
                   <h3
-                    class="text-lg font-semibold text-gray-750 leading-snugish"
+                    class="text-base font-semibold text-gray-750 leading-snugish"
                   >
                     <a
                       href="https://github.com/f3d-app/f3d"
@@ -339,42 +391,19 @@
                       >— fast and minimalist 3D viewer written in C/C++</span
                     >
                   </h3>
-                  <ul class="flex flex-wrap leading-relaxed -mr-1.6 -mb-1.6">
-                    <p class="mr-1.6 leading-normal text-md text-gray-650">
-                      May 2023 – Present | C/C++ Contributor | Community
-                      Moderator
-                    </p>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      C/C++
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      VTK
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      Graphics Programming
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      CI/CD
-                    </li>
-                  </ul>
+                  <p class="leading-normal text-md text-gray-650">
+                    May 2023 – Present | C/C++ Contributor, Community Moderator
+                    | VTK, Graphics Programming, CI/CD
+                  </p>
                 </header>
               </section>
             </div>
           </section>
 
           <section class="mt-4 first:mt-0">
-            <!-- To keep in the same column -->
             <div class="break-inside-avoid">
               <h2
-                class="mb-2 font-bold tracking-widest text-sm2 text-razzmatazz-600 print:font-normal"
+                class="mb-2 font-bold tracking-widest text-md text-razzmatazz-600 print:font-normal"
               >
                 PROJECTS
               </h2>
@@ -387,26 +416,9 @@
                     High Performance Graph Ranges (CPO-Based Architecture) (Zuru
                     Internal)
                   </h3>
-                  <ul class="flex flex-wrap leading-relaxed -mr-1.6 -mb-1.6">
-                    <p class="mr-1.6 leading-normal text-md text-gray-650">
-                      2026
-                    </p>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      C++23
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      Custom Allocators
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      Standard-Compliant Design
-                    </li>
-                  </ul>
+                  <p class="leading-normal text-md text-gray-650">
+                    2026 | C++23, Custom Allocators
+                  </p>
                   <ul class="">
                     <li class="mt-1 text-sm text-gray-700 leading-normal">
                       <span
@@ -439,7 +451,7 @@
               <section class="mb-2 break-inside-avoid">
                 <header>
                   <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                    class="text-base font-semibold text-gray-700 leading-snugish"
                   >
                     <a
                       href="https://github.com/lknknm/ottocento-engine"
@@ -453,36 +465,9 @@
                       >
                     </a>
                   </h3>
-                  <ul class="flex flex-wrap leading-relaxed -mr-1.6 -mb-1.6">
-                    <p class="mr-1.6 leading-normal text-md text-gray-650">
-                      2024
-                    </p>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      C++
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      Vulkan
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      GLSL
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      ImGUI
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      mathematics
-                    </li>
-                  </ul>
+                  <p class="leading-normal text-md text-gray-650">
+                    2024 | C++, Vulkan, GLSL
+                  </p>
                   <p class="mt-2.1 text-sm text-gray-700 leading-normal">
                     Architectural BIM Engine being constructed from the absolute
                     zero with Vulkan graphics API. Life long personal project.
@@ -493,10 +478,9 @@
           </section>
 
           <section class="mt-4 first:mt-0">
-            <!-- To keep in the same column -->
             <div class="break-inside-avoid">
               <h2
-                class="mb-2 font-bold tracking-widest text-sm2 text-razzmatazz-600 print:font-normal"
+                class="mb-2 font-bold tracking-widest text-md text-razzmatazz-600 print:font-normal"
               >
                 SKILLS
               </h2>
@@ -504,7 +488,7 @@
               <section class="mb-2 break-inside-avoid">
                 <header>
                   <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                    class="text-base font-semibold text-gray-700 leading-snugish"
                   >
                     C++
                   </h3>
@@ -527,22 +511,21 @@
           </section>
 
           <section class="mt-4 first:mt-0">
-            <!-- To keep in the same column -->
             <div class="break-inside-avoid">
               <h2
-                class="mb-2 font-bold tracking-widest text-sm2 text-razzmatazz-600 print:font-normal"
+                class="mb-2 font-bold tracking-widest text-md text-razzmatazz-600 print:font-normal"
               >
-                CONFERENCES & PROFESSIONAL DEVELOPMENT
+                CONFERENCES &amp; PROFESSIONAL DEVELOPMENT
               </h2>
               <section class="mb-2 break-inside-avoid">
                 <header>
                   <a
-                    href="https://www.linkedin.com/posts/lkmlln_what-a-morning-got-to-watch-a-lecture-about-ugcPost-7458921959225991168-84sT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABdfABMBf1PXmaAD8Z4STKVA8rtBiySHqao"
+                    href="https://www.linkedin.com/posts/lkmlln_what-a-morning-got-to-watch-a-lecture-about-ugcPost-7458921959225991168-84sT/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABdfABMBf1PXmaAD8Z4STKVA8rtBiySHqao"
                     class="group"
                     target="_blank"
                   >
                     <h3
-                      class="text-lg font-semibold text-gray-700 leading-snugish"
+                      class="text-base font-semibold text-gray-700 leading-snugish"
                     >
                       Concept-Based Generic Programming lecture with Bjarne
                       Stroustrup
@@ -565,17 +548,16 @@
           </section>
 
           <section class="mt-4 first:mt-0">
-            <!-- To keep in the same column -->
             <div class="break-inside-avoid">
               <h2
-                class="mb-2 font-bold tracking-widest text-sm2 text-razzmatazz-600 print:font-normal"
+                class="mb-2 font-bold tracking-widest text-md text-razzmatazz-600 print:font-normal"
               >
                 EDUCATION
               </h2>
               <section class="mb-2 break-inside-avoid">
                 <header>
                   <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                    class="text-base font-semibold text-gray-700 leading-snugish"
                   >
                     CS50x Harvard's Introduction to Computer Science
                   </h3>
@@ -589,10 +571,10 @@
               <section class="mb-2 break-inside-avoid">
                 <header>
                   <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                    class="text-base font-semibold text-gray-700 leading-snugish"
                   >
-                    Federal Institute of Education, Science & Technology (IFSP)
-                    - São Paulo
+                    Federal Institute of Education, Science &amp; Technology
+                    (IFSP) - São Paulo
                   </h3>
                   <p class="leading-normal text-sm text-gray-650">
                     2015 – 2019 | Bachelor of Architecture (B.Arch), Urban
