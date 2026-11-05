@@ -136,8 +136,8 @@
                         class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                         >›</span
                       >
-                      Profiled a per-entity export phase in a C++/Unreal Engine
-                      BIM application: found a 50% lookup miss rate (≈78% worst
+                      Profiled a per-entity export phase in a C++ BIM
+                      application: found a 50% lookup miss rate (≈78% worst
                       case) and redundant per-cycle serialisation, then built a
                       reusable benchmark suite to track phase cost.
                     </li>
@@ -228,18 +228,8 @@
                   </h3>
                   <ul class="flex flex-wrap leading-relaxed -mr-1.6 -mb-1.6">
                     <p class="mr-1.6 leading-normal text-md text-gray-650">
-                      June 2026 – Present | libc++ Contributor
+                      June 2026 – Present | libc++ Contributor / LLVM Member
                     </p>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      C++23 → C++ 26
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
-                    >
-                      Standard-Compliant Design
-                    </li>
                   </ul>
                 </header>
                 <a
@@ -250,13 +240,32 @@
                   <p
                     class="font-raleway mt-1 text-sm text-gray-700 leading-normal"
                   >
-                    Helped kickstart C++29 development with the maintainers.
+                    Co-authored the C++29 kickstart.
                     <span
                       class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
                       >↗</span
                     >
                   </p>
                 </a>
+
+                <a
+                  href="https://github.com/llvm/llvm-project/pull/210075"
+                  class="group"
+                  target="_blank"
+                >
+                  <p
+                    class="font-raleway mt-1 text-sm text-gray-700 leading-normal"
+                  >
+                    Implemented C++23 constexpr <cmath> support (P0533R9), 
+                    including comparison functions and fpclassify, 
+                    and extended constant evaluation to Clang builtins (fmax, fmin, copysign).
+                    <span
+                      class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
+                      >↗</span
+                    >
+                  </p>
+                </a>
+
                 <a
                   href="https://github.com/llvm/llvm-project/issues/172124"
                   class="group"
@@ -265,25 +274,30 @@
                   <p
                     class="font-raleway mt-1 text-sm text-gray-700 leading-normal"
                   >
-                    Helped complete the [[nodiscard]] annotation initiative for
-                    LLVM 23 before the branch-cut deadline, enabling
-                    discarded-value warnings across range adapters and standard
-                    library functions.
+                    Applied [[nodiscard]] across 6 range adaptors (transform, adjacent, adjacent_transform, elements, join, lazy_split),
+                    enabling discarded-value diagnostics for misused views with full test coverage.
                     <span
                       class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
                       >↗</span
                     >
                   </p>
                 </a>
+
+              <p
+                class="font-raleway mt-1 text-sm text-gray-700 leading-normal"
+              >
+                Verified and resolved 5 LWG issues against the current standard, and strengthened ranges test coverage for enumerate_view.
+              </p>
+
                 <a
-                  href="https://github.com/llvm/llvm-project/pulls?q=is%3Apr+author%3Alknknm+is%3Aclosed"
+                  href="https://github.com/llvm/llvm-project/pulls?q=is%3Apr+author%3Alknknm+is%3Amerged"
                   class="group"
                   target="_blank"
                 >
                   <p
                     class="font-raleway mt-1 text-sm text-gray-700 leading-normal"
                   >
-                    20+ PRs merged
+                    23+ PRs merged
                     <span
                       class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
                       >↗</span
