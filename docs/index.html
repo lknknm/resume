@@ -79,9 +79,7 @@
         <!-- end Name -->
 
         <!-- Column -->
-        <div
-          class=""
-        >
+        <div class="">
           <section class="mt-4 first:mt-0">
             <!-- To keep in the same column -->
             <section class="mt-1 first:mt-0">
@@ -106,7 +104,7 @@
                       </a>
                     </h3>
                     <p class="leading-normal text-md text-gray-650">
-                      Jan 2025 – Now | Junior C++ Software Engineer II
+                      Jan 2025 – Now | C++ Software Engineer
                     </p>
                   </header>
                   <ul class="">
@@ -115,17 +113,42 @@
                         class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                         >›</span
                       >
-                      Profiled a per-entity export phase in a C++/Unreal Engine BIM application: found a
-                      50% lookup miss rate (≈78% worst case) and redundant per-cycle serialisation,
-                      then built a reusable benchmark suite to track phase cost.
+                      Owned the end-to-end integration of a real-time pricing
+                      pipeline spanning a native C++ application, an embedded
+                      web runtime, a versioned pricing package and a backend
+                      service, covering design, cross-boundary data contracts,
+                      correctness fixes and benchmarking, and delivered it ahead
+                      of schedule.
                     </li>
                     <li class="mt-1 text-sm text-gray-700 leading-normal">
                       <span
                         class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                         >›</span
                       >
-                      Authored internal C++ white papers on template metaprogramming and zero-overhead
-                      composable graph ranges (C++20 ranges/concepts), verifying assembly parity with
+                      Fixed an asynchronous race condition in which stale
+                      responses from earlier pricing rounds corrupted the
+                      current total, under-reporting prices by 30%, by tagging
+                      each round with an identifier while keeping backward
+                      compatibility with older client versions.
+                    </li>
+                    <li class="mt-1 text-sm text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                      Profiled a per-entity export phase in a C++/Unreal Engine
+                      BIM application: found a 50% lookup miss rate (≈78% worst
+                      case) and redundant per-cycle serialisation, then built a
+                      reusable benchmark suite to track phase cost.
+                    </li>
+                    <li class="mt-1 text-sm text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                      Authored internal C++ white papers on template
+                      metaprogramming and zero-overhead composable graph ranges
+                      (C++20 ranges/concepts), verifying assembly parity with
                       hand-written loops.
                     </li>
                     <li class="mt-1 text-sm text-gray-700 leading-normal">
@@ -133,8 +156,9 @@
                         class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                         >›</span
                       >
-                      Raised code quality through review: allocation-free getter conventions adopted into
-                      team docs, redundant hash lookups removed from hot paths, and 33 static-analysis
+                      Raised code quality through review: allocation-free getter
+                      conventions adopted into team docs, redundant hash lookups
+                      removed from hot paths, and 33 static-analysis
                       null-dereference warnings resolved in a single change.
                     </li>
                     <li class="mt-1 text-sm text-gray-700 leading-normal">
@@ -142,25 +166,11 @@
                         class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                         >›</span
                       >
-                      Reduced regressions in the openings domain: fixed 27 defects (14 regressions, incl.
-                      major and very-high priority) and added integration tests that lock in opening states.
-                    </li>
-                    <li class="mt-1 text-sm text-gray-700 leading-normal">
-                      <span
-                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                        >›</span
-                      >
-                      Detected an 80% dimensional error in steel window frames (4.5 cm vs. a 2.5 cm spec)
-                      that reached factory export data, and aligned configuration with product-design specs.
-                    </li>
-                    <li class="mt-1 text-sm text-gray-700 leading-normal">
-                      <span
-                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                        >›</span
-                      >
-                      Led the architecture decision for parametric window geometry: compared mesh-slicing vs.
-                      profile extrusion across 13 criteria (performance, memory, coupling, asset workflow,
-                      CAD alignment) and prototyped both to guide the team's implementation.
+                      Led the architecture decision for parametric window
+                      geometry: compared mesh-slicing vs. profile extrusion
+                      across 13 criteria (performance, memory, coupling, asset
+                      workflow, CAD alignment) and prototyped both to guide the
+                      team's implementation.
                     </li>
                   </ul>
                 </section>
@@ -212,7 +222,9 @@
                         >↗</span
                       >
                     </a>
-                    <span class="text-sm font-normal text-gray-650">— LLVM compiler toolchain infrastructure</span>
+                    <span class="text-sm font-normal text-gray-650"
+                      >— LLVM compiler toolchain infrastructure</span
+                    >
                   </h3>
                   <ul class="flex flex-wrap leading-relaxed -mr-1.6 -mb-1.6">
                     <p class="mr-1.6 leading-normal text-md text-gray-650">
@@ -253,8 +265,10 @@
                   <p
                     class="font-raleway mt-1 text-sm text-gray-700 leading-normal"
                   >
-                    Helped complete the [[nodiscard]] annotation initiative for LLVM 23 before the branch-cut
-                    deadline, enabling discarded-value warnings across range adapters and standard library functions.
+                    Helped complete the [[nodiscard]] annotation initiative for
+                    LLVM 23 before the branch-cut deadline, enabling
+                    discarded-value warnings across range adapters and standard
+                    library functions.
                     <span
                       class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
                       >↗</span
@@ -294,11 +308,14 @@
                         >↗</span
                       >
                     </a>
-                    <span class="text-sm font-normal text-gray-650">— fast and minimalist 3D viewer written in C/C++</span>
+                    <span class="text-sm font-normal text-gray-650"
+                      >— fast and minimalist 3D viewer written in C/C++</span
+                    >
                   </h3>
                   <ul class="flex flex-wrap leading-relaxed -mr-1.6 -mb-1.6">
                     <p class="mr-1.6 leading-normal text-md text-gray-650">
-                      May 2023 – Present | C/C++ Contributor | Community Moderator
+                      May 2023 – Present | C/C++ Contributor | Community
+                      Moderator
                     </p>
                     <li
                       class="px-2.5 mr-1.6 mb-1.6 text-xs text-gray-100 bg-gray-700 rounded-lg"
@@ -338,7 +355,8 @@
                   </p>
                 </a>
                 <p class="mt-1 text-sm text-gray-700 leading-normal">
-                  Feature discussion and issue tracking with the maintainers to improve user experience.
+                  Feature discussion and issue tracking with the maintainers to
+                  improve user experience.
                 </p>
               </section>
             </div>
@@ -486,7 +504,9 @@
 
               <section class="mb-2 break-inside-avoid">
                 <header>
-                  <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                  <h3
+                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                  >
                     C++
                   </h3>
                   <p class="leading-normal text-md text-gray-650">
@@ -494,14 +514,14 @@
                   </p>
                 </header>
                 <p class="mt-1 text-sm text-gray-700 leading-normal">
-                  <span class="font-semibold">Generic programming:</span> concepts, ranges,
-                  templates, SFINAE, customisation point objects, type traits, zero-copy
-                  abstractions, move semantics
+                  <span class="font-semibold">Generic programming:</span>
+                  concepts, ranges, templates, SFINAE, customisation point
+                  objects, type traits, zero-copy abstractions, move semantics
                 </p>
                 <p class="mt-1 text-sm text-gray-700 leading-normal">
-                  <span class="font-semibold">Performance &amp; systems:</span> memory layouts,
-                  cache optimisation, custom allocators, graphics APIs (Vulkan), low-level
-                  optimisation
+                  <span class="font-semibold">Performance &amp; systems:</span>
+                  memory layouts, cache optimisation, custom allocators,
+                  graphics APIs (Vulkan), low-level optimisation
                 </p>
               </section>
             </div>
@@ -537,8 +557,8 @@
                     2026 | Università Degli Studi di Firenze
                   </p>
                   <p class="leading-normal text-sm text-gray-650">
-                    Attended and engaged in-person with Bjarne Stroustrup on CPOs,
-                    type theory, and behavioral subtyping.
+                    Attended and engaged in-person with Bjarne Stroustrup on
+                    CPOs, type theory, and behavioral subtyping.
                   </p>
                 </header>
               </section>
@@ -555,7 +575,9 @@
               </h2>
               <section class="mb-2 break-inside-avoid">
                 <header>
-                  <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                  <h3
+                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                  >
                     CS50x Harvard's Introduction to Computer Science
                   </h3>
                   <p class="leading-normal text-sm text-gray-650">
@@ -567,13 +589,15 @@
 
               <section class="mb-2 break-inside-avoid">
                 <header>
-                  <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                    Federal Institute of Education, Science & Technology (IFSP) -
-                    São Paulo
+                  <h3
+                    class="text-lg font-semibold text-gray-700 leading-snugish"
+                  >
+                    Federal Institute of Education, Science & Technology (IFSP)
+                    - São Paulo
                   </h3>
                   <p class="leading-normal text-sm text-gray-650">
-                    2015 – 2019 | Bachelor of Architecture (B.Arch), Urban Studies
-                    and Building Sciences
+                    2015 – 2019 | Bachelor of Architecture (B.Arch), Urban
+                    Studies and Building Sciences
                   </p>
                 </header>
               </section>
